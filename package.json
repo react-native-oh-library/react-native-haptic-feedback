@@ -1,14 +1,19 @@
 {
-  "name": "react-native-haptic-feedback",
-  "version": "2.2.0",
+  "name": "@react-native-oh-tpl/react-native-haptic-feedback",
+  "version": "2.2.0-0.0.1",
   "description": "Basic haptic feedback for iOS and android",
   "license": "MIT",
-  "main": "build/index.js",
-  "source": "./src/",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "typings": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
   "nativePackage": true,
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bob": "bob build",
+    "prepare": "npm run bob"
   },
   "keywords": [
     "react-native",
@@ -17,7 +22,8 @@
     "android",
     "ios",
     "native",
-    "feedback"
+    "feedback",
+    "harmony"
   ],
   "author": "Michael Kuczera",
   "peerDependencies": {
@@ -28,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mkuczera/react-native-haptic-feedback.git"
+    "url": "https://github.com/react-native-oh-library/react-native-haptic-feedback.git"
   },
   "homepage": "https://github.com/mkuczera/react-native-haptic-feedback",
   "readme": "https://github.com/mkuczera/react-native-haptic-feedback#readme",
@@ -50,6 +56,29 @@
     "@types/react": "^18.0.28",
     "@types/react-native": "^0.71.3",
     "prettier": "^2.8.5",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "react-native-builder-bob": "^0.20.4"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+        "commonjs",
+        "module",
+        [
+            "typescript",
+            {
+                "project": "tsconfig.build.json" 
+            }
+        ]
+    ]
+},
+  "harmony": {
+    "alias": "react-native-haptic-feedback",
+   "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
   }
 }
