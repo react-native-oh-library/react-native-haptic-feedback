@@ -26,4 +26,5 @@ export enum HapticFeedbackTypes {
 export interface HapticOptions {
   enableVibrateFallback?: boolean;
   ignoreAndroidSystemSettings?: boolean;
+  ignoreHOSSystemSettings?:boolean
 }

@@ -1,15 +1,13 @@
 import type { TurboModule } from "react-native/Libraries/TurboModule/RCTExport";
 import { TurboModuleRegistry } from "react-native";
-import { HapticFeedbackTypes } from "./types";
 
 export interface Spec extends TurboModule {
   // your module methods go here, for example:
   trigger(
-    type: keyof typeof HapticFeedbackTypes | HapticFeedbackTypes,
+    type: string,
     options?: {
-      enableVibrateFallback?: boolean;
-      ignoreAndroidSystemSettings?: boolean;
+      ignoreHOSSystemSettings?: boolean;
     },
   ): void;
 }
-export default TurboModuleRegistry.get<Spec>("RNHapticFeedback");
+export default TurboModuleRegistry.get<Spec>("HapticFeedbackNativeModule") as Spec | null;
