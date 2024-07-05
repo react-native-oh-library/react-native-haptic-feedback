@@ -8,15 +8,16 @@ export * from "./types";
 const defaultOptions = {
   enableVibrateFallback: false,
   ignoreAndroidSystemSettings: false,
+  
 };
 
 class RNReactNativeHapticFeedback {
   static trigger = (
-    type: keyof typeof HapticFeedbackTypes | HapticFeedbackTypes = HapticFeedbackTypes.selection,
+    type: string | HapticFeedbackTypes = HapticFeedbackTypes.selection,
     options: HapticOptions = {},
   ) => {
     const triggerOptions = createTriggerOptions(options);
-    
+
     try {
       const isTurboModuleEnabled = global.__turboModuleProxy != null;
       const hapticFeedback = isTurboModuleEnabled
