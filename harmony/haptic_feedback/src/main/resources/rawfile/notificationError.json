@@ -16,7 +16,7 @@
             "Type": "transient",
             "StartTime": 0,
             "Parameters": {
-              "Intensity": 50,
+              "Intensity": 80,
               "Frequency": 10
             }
           }
@@ -24,9 +24,9 @@
         {
           "Event": {
             "Type": "transient",
-            "StartTime": 110,
+            "StartTime": 150,
             "Parameters": {
-              "Intensity": 40,
+              "Intensity": 60,
               "Frequency": 10
             }
           }
@@ -34,7 +34,7 @@
         {
           "Event": {
             "Type": "transient",
-            "StartTime": 220,
+            "StartTime": 300,
             "Parameters": {
               "Intensity": 100,
               "Frequency": 30
@@ -44,9 +44,9 @@
         {
           "Event": {
             "Type": "transient",
-            "StartTime": 330,
+            "StartTime": 450,
             "Parameters": {
-              "Intensity": 10,
+              "Intensity": 40,
               "Frequency": 10
             }
           }
