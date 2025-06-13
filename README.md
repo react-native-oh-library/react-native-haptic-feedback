@@ -1,6 +1,6 @@
 # @react-native-oh-tpl/react-native-haptic-feedback
 
-This project is based on [react-native-haptic-feedback](https://github.com/mkuczera/react-native-haptic-feedback)
+This project is based on [react-native-haptic-feedback@2.2.0](https://github.com/mkuczera/react-native-haptic-feedback/tree/v2.2.0)
 
 ## Documentation 
 
