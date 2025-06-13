@@ -16,7 +16,7 @@
             "Type": "transient",
             "StartTime": 0,
             "Parameters": {
-              "Intensity": 40,
+              "Intensity": 60,
               "Frequency": 10
             }
           }
