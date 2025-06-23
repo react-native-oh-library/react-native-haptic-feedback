@@ -10,7 +10,7 @@ import vibrator from '@ohos.vibrator';
 import audio from '@ohos.multimedia.audio';
 import { BusinessError } from '@ohos.base';
 import common from '@ohos.app.ability.common';
-export class RNHapticFeedbackTurboModule extends TurboModule implements TM.HapticFeedbackNativeModule.Spec {
+export class RNHapticFeedbackTurboModule extends TurboModule implements TM.RNHapticFeedback.Spec {
   private context: common.UIAbilityContext
   constructor(ctx: TurboModuleContext) {
     super(ctx);

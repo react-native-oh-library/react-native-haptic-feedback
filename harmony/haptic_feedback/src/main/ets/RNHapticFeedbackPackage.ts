@@ -18,7 +18,7 @@ class RNHapticFeedbackTurboModuleFactory extends TurboModulesFactory {
   }
 
   hasTurboModule(name: string): boolean {
-    return name === TM.HapticFeedbackNativeModule.NAME;
+    return name === TM.RNHapticFeedback.NAME;
   }
 }
 

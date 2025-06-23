@@ -11,4 +11,4 @@ export interface Spec extends TurboModule {
     },
   ): void;
 }
-export default TurboModuleRegistry.get<Spec>("HapticFeedbackNativeModule") as Spec | null;
+export default TurboModuleRegistry.get<Spec>("RNHapticFeedback") as Spec | null;
